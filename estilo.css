@@ -1,0 +1,207 @@
+body {
+    margin: 0;
+    background-color: whitesmoke;
+    padding-bottom: 60px;
+}
+
+.container {
+    display: grid;
+}
+
+/* Estilo do cabeçalho */
+header {
+    grid-column-start: 1;
+    grid-column-end: 12;
+    background-color: #22754f;
+    color: whitesmoke;
+    text-align: center;
+}
+
+/* Estilo do menu */
+.menuPrincipal {
+    justify-content: center;
+    gap: 20px;
+}
+
+ul {
+    list-style-type: none;
+    color: #22754f;
+}
+
+/* Estilo dos links das páginas no menu */
+.menuPrincipal a, .menuPrincipal a:link {
+    color: rgb(105, 131, 35);
+    padding: 8px 8px;
+    border: solid #58968d 1px;
+    text-decoration: none;
+}
+
+.menuPrincipal li {
+    float: left;
+}
+
+.menuPrincipal a:hover {
+    background-color: gold;
+    color: whitesmoke;
+}
+
+/* Estilo dos subtítulos nas páginas */
+h2 {
+    border-width: medium;
+    border-style: solid;
+    border-color: rgb(105, 131, 35);
+    color: #164d34;
+    background-color: whitesmoke;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 8px;
+}
+
+/* Estilo dos parágrafos */
+p {
+    color: #164d34;
+    margin-left: 23px;
+    margin-right: 23px;
+}
+
+/* Estilo do formulário */
+form {
+        color: #164d34;
+        margin-left: 23px;
+        margin-right: 23px;
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: #22754f;
+    color: whitesmoke;
+    bottom: 0;
+    left: 0;
+    height: 45px;
+    position: fixed;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #164d34;
+}
+
+/* Estilo links portfólio */
+#linksPortfolio a{
+    text-decoration: none;
+    color: #164d34;
+}
+
+#linksPortfolio a:hover{
+    text-decoration: none;
+    color: gold;
+    font-size: large;
+}
+
+
+/* Estilo botão voltar do formulário */
+#voltarForm {
+    display: flex; 
+    justify-content: center;
+    margin-top: 10px; 
+}
+
+/* Menu hamburguer em telas menores */
+@media (max-width: 768px) {
+    .menuPrincipal {
+        flex-direction: column;
+        display: none;
+        background-color: #22754f;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .menuPrincipal.active {
+        display: flex;
+    }
+
+    ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menuPrincipal a {
+        color: whitesmoke;
+        border: none;
+        padding: 10px 0;
+        font-size: 12px;
+    }
+
+    .menuPrincipal a:hover {
+        background-color: gold;
+    }
+
+    /* Ícone hamburguer */
+    .burger {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+
+    .burger div {
+        width: 30px;
+        height: 4px;
+        background-color: whitesmoke;
+        margin: 5px 0;
+    }
+
+    /* Ajuste da imagem */
+    .foto img {
+        width: 100px;
+        height: 100px;
+        margin-top: 20px;
+    }
+
+    .foto {
+        margin-top: 80px;
+    }
+
+    footer {
+        background-color: #22754f;
+        color: whitesmoke;
+        bottom: 0;
+        left: 0;
+        position: fixed;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        font-size: 12px;
+        line-height: 1.4;
+        box-sizing: border-box;
+        height: auto;
+    }
+    
+    body {
+        padding-bottom: 90px;
+    }
+}
+
+
+.foto img {
+    display: block;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border: 5px solid #22754f;
+    object-fit: cover;
+}
+
+.foto {
+    margin-top: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

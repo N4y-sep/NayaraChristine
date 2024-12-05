@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <script src="funcao.js"></script>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<!-- Página de contato com formulário para interação do usuário -->
+<!-- Inclui inputs para nome, email e mensagem -->
+<body>
+<!-- Cabeçalho com o título da página -->
+<header class="container">
+    <h1>CONTATO</h1>
+    <!-- Ícone do menu haburguer -->
+    <div class="burger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</header>
+
+<nav class="menuPrincipal container">
+    <br>
+    <ul>
+        <li><a href="sobreMim.html">SOBRE MIM</a></li>
+        <li><a href="formacao.html">FORMAÇÃO</a></li>
+        <li><a href="portfolio.html">PORTFÓLIO</a></li>
+        <li><a href="index.html">VOLTAR</a></li>
+    </ul>
+</nav>
+
+<br>
+<h2>Gostou do que viu até aqui? Entre em contato para saber mais!</h2>
+
+<form action="submit.php" method="post">
+
+    <label for="nome">Nome:</label>
+    <input type="text" name="nome" placeholder="Digite seu nome" size="26">
+    <br><br>
+    <label for="email">E-mail:</label>
+    <input type="email" name="email" placeholder="Digite seu e-mail" size="25">
+    <br><br>
+    <label for="mensagem"></label>Mensagem:</label>
+    <textarea rows="3" cols="22" placeholder="Deixe aqui sua mensagem!"></textarea>
+    <br><br>
+    <button type="submit"><a href="enviaForm.html">ENVIAR</a></button>
+</form>
+
+
+<footer class="container">
+    <h5>Esta página é um trabalho da matéria de Fundamentos da Programação WEB do curso de CST Análise e Desenvolvimento de Sistemas da Uninter - 2024</h5>
+</footer>
+
+</body>
+</html>
