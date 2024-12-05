@@ -45,6 +45,7 @@ ul {
     background-color: gold;
     color: whitesmoke;
     font-size: large;
+    border: gold;
 }
 
 /* Estilo dos subtítulos nas páginas */
@@ -95,8 +96,9 @@ a {
 
 /* Estilo links portfólio */
 #linksPortfolio a{
-    text-decoration: none;
-    color: #164d34;
+    text-decoration: underline;
+    color: rgb(105, 131, 35)
+
 }
 
 #linksPortfolio a:hover{
@@ -206,7 +208,7 @@ a {
     #linksPortfolio a:hover {
         color: whitesmoke;
         background-color: gold;
-    }
+        border: #164d34;
     }
 }
 
