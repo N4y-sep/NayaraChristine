@@ -33,6 +33,7 @@ ul {
     color: rgb(105, 131, 35);
     padding: 8px 8px;
     border: solid #58968d 1px;
+    border-radius: 8px;
     text-decoration: none;
 }
 
@@ -43,12 +44,15 @@ ul {
 .menuPrincipal a:hover {
     background-color: gold;
     color: whitesmoke;
+    font-size: large;
 }
 
 /* Estilo dos subtítulos nas páginas */
 h2 {
     border-width: medium;
     border-style: solid;
+    border-radius: 8px;
+    border: solid medium;
     border-color: rgb(105, 131, 35);
     color: #164d34;
     background-color: whitesmoke;
@@ -190,6 +194,19 @@ a {
 
     .nomePag {
         font-size: 25px;
+    }
+
+    #linksPortfolio a {
+        text-decoration: none;
+        border: 1px solid #22754f;
+        border-radius: 8px;
+        padding: 8px;
+        color: #22754f;
+    }
+    #linksPortfolio a:hover {
+        color: whitesmoke;
+        background-color: gold;
+    }
     }
 }
 
