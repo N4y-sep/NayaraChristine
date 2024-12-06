@@ -44,7 +44,7 @@ ul {
 .menuPrincipal a:hover {
     background-color: gold;
     color: whitesmoke;
-    font-size: large;
+    font-size: 18px;
     border: gold;
 }
 
@@ -146,6 +146,7 @@ a {
 
     .menuPrincipal a:hover {
         background-color: gold;
+        font-size: 10px;
     }
 
     /* Ícone hamburguer */
